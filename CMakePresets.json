@@ -1,14 +1,37 @@
 {
 	"version": 6,
+
+	"buildPresets": [
+		{
+			"configurePreset": "default",
+			"displayName": "Default",
+			"hidden": true,
+			"name": "default"
+		},
+		{
+			"configuration": "debug",
+			"displayName": "Debug",
+			"inherits": "default",
+			"name": "debug"
+		},
+		{
+			"configuration": "release",
+			"displayName": "Release",
+			"inherits": "default",
+			"name": "release"
+		}
+	],
+
 	"configurePresets": [
 		{
-			"name": "default",
+			"binaryDir": "${sourceDir}/build/",
+			"cacheVariables": {
+				"CMAKE_CONFIGURATION_TYPES": "debug;release",
+				"CMAKE_EXPORT_COMPILE_COMMANDS": "TRUE"
+			},
 			"displayName": "Default",
 			"generator": "Ninja Multi-Config",
-			"cacheVariables": {
-				"CMAKE_CONFIGURATION_TYPES": "Debug;Release",
-				"CMAKE_EXPORT_COMPILE_COMMANDS": "TRUE"
-			}
+			"name": "default"
 		}
 	]
 }
