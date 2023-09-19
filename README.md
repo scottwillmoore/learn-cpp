@@ -2,6 +2,12 @@
 
 https://www.learncpp.com/
 
+## Instructions
+
+```bash
+cmake -B ./build/ -S ./ --preset default
+```
+
 ## References
 
 - https://www.reddit.com/r/NixOS/comments/12lmn5x/clang_cant_find_standard_library_headers/

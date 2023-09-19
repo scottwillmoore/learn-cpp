@@ -29,11 +29,16 @@
       ];
 
       perSystem = {packages, ...}: {
-        devShells.default = packages.mkShell {
-          nativeBuildInputs = with packages; [
-            clang
-          ];
-        };
+        devShells.default =
+          packages.mkShell.override {
+            stdenv = packages.llvmPackages_16.stdenv;
+          } {
+            nativeBuildInputs = [
+              packages.clang-tools_16
+              packages.cmake
+              packages.ninja
+            ];
+          };
       };
     };
 }

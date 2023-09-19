@@ -1,0 +1,14 @@
+{
+	"version": 6,
+	"configurePresets": [
+		{
+			"name": "default",
+			"displayName": "Default",
+			"generator": "Ninja Multi-Config",
+			"cacheVariables": {
+				"CMAKE_CONFIGURATION_TYPES": "Debug;Release",
+				"CMAKE_EXPORT_COMPILE_COMMANDS": "TRUE"
+			}
+		}
+	]
+}

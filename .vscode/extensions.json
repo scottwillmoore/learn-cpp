@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"llvm-vs-code-extensions.vscode-clangd",
+		"mkhl.direnv",
+		"streetsidesoftware.code-spell-checker"
+	]
+}

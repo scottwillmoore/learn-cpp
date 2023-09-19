@@ -1,0 +1,7 @@
+{
+	"files.readonlyInclude": {
+		".direnv/**": true,
+		"build/**": true,
+		"flake.lock": true
+	}
+}
